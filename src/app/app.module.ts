@@ -13,6 +13,9 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 
+
+import { SettingsService } from './services/settings.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,7 @@ import { RegisterComponent } from './login/register.component';
     PagesModule,
     FormsModule
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
